@@ -1,0 +1,27 @@
+# OSPF Multi-Router Network
+
+## Topology
+PC0 → Router3 → Router4 → PC1
+
+## IP Plan
+PC0: 192.168.1.10 /24  GW: 192.168.1.1
+R3 Fa0/0: 192.168.1.1
+R3 Fa0/1: 10.0.0.1
+
+R4 Fa0/0: 10.0.0.2
+R4 Fa0/1: 192.168.2.1
+PC1: 192.168.2.10 /24  GW: 192.168.2.1
+
+## OSPF Configuration
+OSPF Area 0 is used on both routers.
+
+## Verification
+- OSPF neighbors formed successfully
+- Routes learned dynamically
+- Ping between PC0 and PC1 successful
+
+## Troubleshooting
+Issue: Initial ping failed  
+Cause: ARP resolution  
+Fix: Retry ping  
+Result: Successful communication
