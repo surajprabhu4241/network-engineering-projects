@@ -1,0 +1,34 @@
+# Project 8 - Enterprise Mini Project
+
+## Overview
+Designed and implemented a multi-site enterprise network using VLAN segmentation, router-on-a-stick, DHCP, and OSPF routing.
+
+## Topology
+- Site A: VLAN 10 (Users), VLAN 20 (Admin)
+- Site B: VLAN 30 (Users), VLAN 40 (Servers)
+- WAN: 10.0.0.0/30 using OSPF Area 0
+
+## Technologies
+- VLANs
+- Trunking
+- Router-on-a-Stick
+- DHCP
+- OSPF
+- Ping and CLI verification
+
+## Verification
+- VLAN communication tested
+- Inter-VLAN routing verified
+- Cross-site connectivity confirmed
+- DHCP assignment validated
+- OSPF neighbor relationship established
+- Routing tables checked
+
+## Result
+All devices successfully communicated across VLANs and sites. Dynamic routing via OSPF ensured scalability.
+
+## Skills Demonstrated
+- Network design
+- Troubleshooting
+- CLI verification
+- Documentation
